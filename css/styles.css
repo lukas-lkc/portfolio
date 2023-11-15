@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #3db36b;
+    color: #FFF;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #0f642f;
+}
+
+.container {
+    background-color: #EEE;
+    min-height: 60vh;
+    padding: 50px;
+}
+
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 31%;
+    display: inline-block;
+    /* Adicione regras de estilo específicas para os cartões, se necessário */
+    margin: 1% 1%; /*1% cima/baixo e laterais*/
+    padding: 15px;
+}
+
+.product-image{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px; /*espaço entre a imagem e oq estiver abaixo*/
+    background-position: center;
+    background-size: cover; /*tenta mostrar o max possível da imagem na área definida*/
+}
+
+#img-1{
+    background-image: url('../img/tenis1.jpg');
+}
+
+#img-2{
+    background-image: url('../img/tenis2.jpg');
+}
+
+#img-3{
+    background-image: url('../img/tenis3.jpg');
+}
+
+#img-4{
+    background-image: url('../img/tenis4.jpg');
+}
+
+#img-5{
+    background-image: url('../img/tenis5.jpg');
+}
+
+#img-6{
+    background-image: url('../img/tenis6.jpg');
+}
+
+h3 {
+    margin-bottom: 10px;
+    color:#3db36b;
+    border-left: 5px solid #0f642f; /*adiciona uma pequena linha vertical ao lado do título*/
+    padding-left: 7px;
+    font-size: 24px;
+}
+
+/*card p meche apenas nos parágrafos do card*/
+.card p {
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #3db36b;
+    color: #FFF;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: #0f642f;
+}
+
+footer {
+    background-color: #3db36b;
+    color: #FFF;
+    border-top: 2px solid #0f642f;
+    text-align: center;
+    padding: 80px;
+    /* Adicione regras de estilo específicas para o rodapé, se necessário */
+}
+
+/* Adicione regras de mídia aqui para tornar o design responsivo */
