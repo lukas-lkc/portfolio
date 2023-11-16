@@ -106,7 +106,7 @@ footer {
     /* Adicione regras de estilo específicas para o rodapé, se necessário */
 }
 
-/*Tablet*/
+/* Tablet */
 @media (max-width: 900px) {
     .container {
         padding: 0px;
@@ -151,7 +151,7 @@ footer {
   }
 
 
-/* mobile */
+/* Smartphone */
 @media (max-width: 767px) {
     .card {
         width: 100%;
@@ -182,11 +182,11 @@ footer {
       }
   
     footer {
-        padding: 0px;
+        padding: 40px;
     }
   }
 
-/* Smart Watch*/
+/* Smartwatch*/
 @media (max-width: 260px) {
     header {
         padding: 5px;
