@@ -3,20 +3,71 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    color: var(--color-white); /*cor de todas as fontes que não tiverem atributo de cor própria*/
 }
 
-header {
-    background-color: #3db36b;
-    color: #FFF;
-    padding: 15px;
+:root {
+    --color-white: #fff;
+    --color-dark1: #272727;
+    --color-dark2: #2d2d2d;
+    --color-dark3: #414141;
+    --color-dark4: #1c1c1c;
+    --color-dark5: #343434;
+    --color-green1: #3db36b;
+    --color-green2: #0f642f;;
+}
+
+.header_bar {
+    background-color: var(--color-green1);
+    height: 56px; /*ou (3.5em = 3,5 x 16) = 56px*/
     text-align: center;
-    border-bottom: 2px solid #0f642f;
+    display: flex; /*deixa um bloco ao lado do outro*/
+    /*flex-direction: column; deixa um elemento em baixo do outro em formato de coluna*/
+    flex-direction: row; /*deixa um elemento ao lado do outro linha (vem por default)*/
+    align-items: center;
+    justify-content: space-between; /*distancia entre os blocos, sempre ao extremo*/
+    padding: 0 10%; /* espaçamentos apenas na direit/esquerda*/
+}
+
+.header_bar h1{
+    width: 45px;
+}
+
+.nav_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+}
+
+.nav_header a{
+    text-decoration: none;
+    color: var(--color-white);
+    transition: 1s;
+    font-weight: bold;
+}
+
+.nav_header a:hover{
+    color: var(--color-green1);
+    transition: 1s;
+}
+
+/*aqui deve ser feito posteriormente com JS*/
+.active{
+    background-color: var(--color-green2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn_icon_header{
+    display: none;
 }
 
 .container {
-    background-color: #EEE;
+    background-color: var(--color-dark1);
     min-height: 60vh;
     padding: 50px;
+    transition: 1s;
 }
 
 .products-container {
@@ -67,7 +118,7 @@ header {
 h3 {
     margin-bottom: 10px;
     color:#3db36b;
-    border-left: 5px solid #0f642f; /*adiciona uma pequena linha vertical ao lado do título*/
+    border-left: 5px solid var(--color-green2); /*adiciona uma pequena linha vertical ao lado do título*/
     padding-left: 7px;
     font-size: 24px;
 }
@@ -87,27 +138,24 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #3db36b;
-    color: #FFF;
+    background-color: var(--color-green1);
     padding: 15px;
     transition: 0.5s;
 }
 
 .btn:hover{
-    background-color: #0f642f;
+    background-color: var(--color-green2);
 }
 
 footer {
-    background-color: #3db36b;
-    color: #FFF;
-    border-top: 2px solid #0f642f;
+    background-color: var(--color-green1);
     text-align: center;
     padding: 80px;
     /* Adicione regras de estilo específicas para o rodapé, se necessário */
 }
 
 /* Tablet */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .container {
         padding: 0px;
       }
@@ -152,7 +200,7 @@ footer {
 
 
 /* Smartphone */
-@media (max-width: 767px) {
+@media (max-width: 640px) {
     .card {
         width: 100%;
         margin: 0% 0;
@@ -194,7 +242,7 @@ footer {
         border-bottom: 2px solid #0f642f;
     }
 
-    h1{
+    header h1{
         font-size: 15px;
     }
     
