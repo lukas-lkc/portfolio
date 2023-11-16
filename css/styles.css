@@ -106,4 +106,134 @@ footer {
     /* Adicione regras de estilo específicas para o rodapé, se necessário */
 }
 
-/* Adicione regras de mídia aqui para tornar o design responsivo */
+/*Tablet*/
+@media (max-width: 900px) {
+    .container {
+        padding: 0px;
+      }
+
+    .products-container {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0px;
+    }
+    .card {
+        width: 40%;
+        text-align: center;
+        display: inline-block;
+        /* Adicione regras de estilo específicas para os cartões, se necessário */
+        margin: 30px; /*1% cima/baixo e laterais*/
+        padding: 0px;
+    }
+
+    #img-1{
+        margin-top: 0px;
+    }
+
+    h3 {
+        border-left: 30px solid #137e3c; /*adiciona uma pequena linha vertical ao lado do título*/
+        padding-left: 10px;
+    }
+
+    .card p {
+        margin-bottom: 7px;
+        padding-left: 7px;
+    }
+
+    .btn {
+        margin-bottom: 40px;
+    }
+  
+    footer {
+        padding: 40px;
+    }
+  }
+
+
+/* mobile */
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+        margin: 0% 0;
+        padding: 0px;
+    }
+
+    #img-1{
+        margin-top: 10px;
+    }
+
+    h3 {
+        border-left: 30px solid #137e3c; /*adiciona uma pequena linha vertical ao lado do título*/
+        padding-left: 10px;
+    }
+
+    .card p {
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .btn {
+        margin-bottom: 40px;
+    }
+    
+    .container {
+        padding: 0px;
+      }
+  
+    footer {
+        padding: 0px;
+    }
+  }
+
+/* Smart Watch*/
+@media (max-width: 260px) {
+    header {
+        padding: 5px;
+        text-align: center;
+        border-bottom: 2px solid #0f642f;
+    }
+
+    h1{
+        font-size: 15px;
+    }
+    
+    .card {
+        width: 100%;
+        margin: 0% 0;
+        padding: 0px;
+    }
+    .product-image{
+        height: 100px;
+    }
+
+    #img-1{
+        margin-top: 5px;
+    }
+    
+    h3 {
+        font-size: 20px;
+        border-left: 5px solid #137e3c; /*adiciona uma pequena linha vertical ao lado do título*/
+        padding-left: 10px;
+    }
+
+    .card p {
+        margin-bottom: 3px;
+        padding: 0px 3px;
+    }
+
+    .btn {
+        margin-bottom: 5px;
+        padding: 7px 0px 5px 0px;
+    }
+    
+    .container {
+        padding: 0px;
+      }
+  
+    footer {
+        padding: 20px;
+    }
+  }
+
+  
