@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portifolho</title>
   <link rel="stylesheet" href="css/styles.css" /><!--local-->
+  <script src="script.js" ></script><!--local-->
   <!--github-->
   <link href="https://raw.githubusercontent.com/lukas-lkc/page03/main/css/styles.css" rel="stylesheet" />
   <script src="https://raw.githubusercontent.com/lukas-lkc/page03/main/script.js"></script>
@@ -14,21 +15,35 @@
 
 <body>
   <!-- Cabeçalho -->
-  <header class="header_bar">
+  <header class="header_bar" id="header_bar">
+    <button onclick="btn()" class="btn_icon_header">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+      </svg>
+    </button>
     <h1>LCP</h1>
     <!--caso queira por imagem
       <div class="logo_header">
         <img src="link" class="img_logo" alt"legenda">
       </div>
       -->
-    <nav class="nav_header">
+    <nav class="nav_header" id="nav_header">
+      <button onclick="btn()" class="btn_icon_header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+          viewBox="0 0 16 16">
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </button>
       <a href="#" class="active">Home</a>
       <a href="#">Sobre mim</a>
       <a href="#">Contato</a>
     </nav>
   </header>
   <!-- Grid de produtos -->
-  <main class="container">
+  <main tabindex="0" onclick="closeSidebar()" class="container" id="container">
     <section class="products-container">
       <div class="card">
         <div class="product-image" id="img-1"></div>
@@ -124,5 +139,40 @@
     </p>
   </footer>
 </body>
+<script>
+  var headerBar = document.getElementById('header_bar');
+  var navHeader = document.getElementById('nav_header');
+  var container = document.getElementById('container');
+  var showSidebar = false;
 
+  function btn()
+
+  {
+    showSidebar = !showSidebar;
+    if(showSidebar){
+      navHeader.style.marginLeft = '-10vw';
+      navHeader.style.animationName = 'showSidebar';
+      container.style.filter = 'blur(2px)';
+    }else{
+      navHeader.style.marginLeft = '-100vw';
+      navHeader.style.animationName = '';
+      container.style.filter = '';
+    }
+  }
+
+  function closeSidebar()
+
+  {
+    if(showSidebar){
+      btn();
+    }
+  }
+//quando alterar o tamanho da tela
+  window.addEventListener('resize', function(event){
+    if(window.innerWidth > 640 && showSidebar)
+    {
+      btn();
+    }
+  })
+</script>
 </html>
