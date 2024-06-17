@@ -250,6 +250,11 @@ footer {
         display: block;
     }
 
+    .title-main {
+        text-align: center;
+        margin: 0px auto; 
+        padding: 20px 0; 
+    }
 
     .card {
         width: 100%;
@@ -269,8 +274,8 @@ footer {
 
     .product-text h3 {
         text-align: left;
-        color: #3db36b;
-        border-left: 15px solid var(--color-green2);
+        color: var(--color-green1);
+        border-left: 15px solid var(--color-white);
         /*adiciona uma pequena linha vertical ao lado do título*/
         padding: 0px 0px 0px 20px;
         margin-bottom: 8px;
@@ -307,6 +312,12 @@ footer {
         width: 60vw;
     }
 
+    .title-main {
+        text-align: center;
+        margin: 0px auto; 
+        padding: 20px 0; 
+    }
+
     .card {
         width: 100%;
         margin: 0% 0;
@@ -329,8 +340,8 @@ footer {
 
     .product-text h3 {
         text-align: left;
-        color: #3db36b;
-        border-left: 15px solid var(--color-green2);
+        color: var(--color-green1);
+        border-left: 15px solid var(--color-white);
         /*adiciona uma pequena linha vertical ao lado do título*/
         padding: 0px 0px 0px 10px;
         margin-bottom: 3px;
