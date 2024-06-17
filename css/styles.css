@@ -14,8 +14,8 @@
     --color-dark3: #414141;
     --color-dark4: #1c1c1c;
     --color-dark5: #343434;
-    --color-green1: #3db36b;
-    --color-green2: #0f642f;
+    --color-green1: #3498db;
+    --color-green2: #194e71;
     ;
 }
 
@@ -55,13 +55,13 @@
 }
 
 .nav_header a:hover {
-    color: var(--color-green1);
+    color: var(--color-dark2);
     transition: 1s;
 }
 
 /*aqui deve ser feito posteriormente com JS*/
 .active {
-    background-color: var(--color-green2);
+    background-color: var(--color-dark2);
     padding: 10px;
     border-radius: 10px;
 }
@@ -79,6 +79,12 @@
     min-height: 60vh;
     padding: 25px;
     transition: 1s;
+}
+
+.title-main {
+    text-align: center;
+    margin: 20px auto; 
+    padding: 20px 0; 
 }
 
 .products-container {
@@ -107,27 +113,19 @@
 }
 
 #img-1 {
-    background-image: url('../img/tenis1.jpg');
+    background-image: url('../img/hrtool.png');
 }
 
 #img-2 {
-    background-image: url('../img/tenis2.jpg');
+    background-image: url('../img/wifilebre.png');
 }
 
 #img-3 {
-    background-image: url('../img/tenis3.jpg');
+    background-image: url('../img/barbershop.png');
 }
 
 #img-4 {
-    background-image: url('../img/tenis4.jpg');
-}
-
-#img-5 {
-    background-image: url('../img/tenis5.jpg');
-}
-
-#img-6 {
-    background-image: url('../img/tenis6.jpg');
+    background-image: url('../img/barbershop.png');
 }
 
 .product-text {
@@ -136,8 +134,8 @@
 
 .product-text h3 {
     text-align: left;
-    color: #3db36b;
-    border-left: 15px solid var(--color-green2);
+    color:  var(--color-green1);
+    border-left: 10px solid var(--color-white);
     /*adiciona uma pequena linha vertical ao lado do título*/
     padding: 0px 0px 0px 20px;
     margin-bottom: 8px;
@@ -164,7 +162,8 @@
 }
 
 .btn:hover {
-    background-color: var(--color-green2);
+    color: var(--color-dark5);
+    background-color: var(--color-white);
 }
 
 footer {
