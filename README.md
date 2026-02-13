@@ -23,11 +23,9 @@ Descrição: O Bootstrap Icon é uma biblioteca de ícones de código aberto ofi
 Icones utilizados: List e X.
 
 
-Como Executar o Projeto
+# Como Executar o Projeto
 
-Para executar este projeto em seu ambiente local, siga as instruções abaixo:
-
-Acesse o link: https://lukas-lkc.github.io/page03 
+Acesse o link: https://lukas-lkc.github.io/portfolio/
 
 Navegue pela página e explore os diferentes elementos e funcionalidades implementadas.
 
